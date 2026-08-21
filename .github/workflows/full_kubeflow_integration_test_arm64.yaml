@@ -18,7 +18,6 @@ env:
 jobs:
   full_kubeflow_integration_test_arm64:
     name: Kubeflow Installation and Testing on ARM64
-    if: ${{ github.repository == 'kubeflow/community-distribution' }}
     runs-on:
       labels: ubuntu-24.04-arm
       # labels: ubuntu-latest-16-cores
