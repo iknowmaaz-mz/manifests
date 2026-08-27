@@ -29,7 +29,6 @@ for deployment in \
   ml-pipeline-scheduledworkflow \
   ml-pipeline-viewer-crd \
   cache-server \
-  metadata-writer \
   seaweedfs; do
   kubectl wait --for=condition=Available "deployment/${deployment}" \
     -n kubeflow --timeout=600s
