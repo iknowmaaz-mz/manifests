@@ -19,7 +19,7 @@ spec:
 
       initContainers:
         - name: generate-config
-          image: ghcr.io/deploykf/ci/ml_metadata_store_server:sha-cad0c56
+          image: gcr.io/tfx-oss-public/ml_metadata_store_server:1.14.0
           imagePullPolicy: IfNotPresent
           securityContext:
             allowPrivilegeEscalation: false
